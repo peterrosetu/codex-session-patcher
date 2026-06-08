@@ -377,7 +377,7 @@ export function adminPage() {
       if (!groupKey || !positionKey) return;
       const item = await api("/api/admin/ad-projects/" + encodeURIComponent(state.projectId) + "/ad-slots", {
         method:"POST",
-        body:{ group_key:groupKey, group_label:groupLabel || groupKey, position_key:positionKey, position_label:positionLabel || positionKey, suggested_ratio:"3:4", suggested_size:"1080 × 1440", enabled:true }
+        body:{ group_key:groupKey, group_label:groupLabel || groupKey, position_key:positionKey, position_label:positionLabel || positionKey, suggested_ratio:"9:16", suggested_size:"1080 × 1920", enabled:true }
       });
       state.groupKey = item.item.group_key;
       await loadSlots();

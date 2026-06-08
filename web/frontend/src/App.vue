@@ -669,10 +669,11 @@ onUnmounted(() => {
 }
 
 .ad-layout {
-  max-width: 1500px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   display: grid;
-  grid-template-columns: var(--ad-left-width) minmax(0, 1fr) var(--ad-right-width);
+  grid-template-columns: var(--ad-left-width) minmax(0, 800px) var(--ad-right-width);
   gap: 16px;
   align-items: start;
 }
@@ -689,15 +690,23 @@ onUnmounted(() => {
 }
 
 .ad-layout-left-only {
-  grid-template-columns: var(--ad-left-width) minmax(0, 1fr);
+  grid-template-columns: var(--ad-left-width) minmax(0, 800px);
 }
 
 .ad-layout-right-only {
-  grid-template-columns: minmax(0, 1fr) var(--ad-right-width);
+  grid-template-columns: minmax(0, 800px) var(--ad-right-width);
 }
 
 .ad-layout-main {
   min-width: 0;
+}
+
+.ad-layout-main :deep(.prompt-enhance-panel),
+.ad-layout-main :deep(.settings-panel),
+.ad-layout-main :deep(.help-panel),
+.ad-layout-main :deep(.cooperation-panel) {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* 响应式布局 */

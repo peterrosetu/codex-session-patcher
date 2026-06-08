@@ -19,7 +19,7 @@ CREATE TABLE ad_slots (
   suggested_ratio TEXT NOT NULL DEFAULT '',
   suggested_size TEXT NOT NULL DEFAULT '',
   default_fit TEXT NOT NULL DEFAULT 'natural',
-  default_width TEXT NOT NULL DEFAULT 'clamp(190px, 17vw, 320px)',
+  default_width TEXT NOT NULL DEFAULT 'clamp(240px, 22vw, 420px)',
   default_max_height TEXT NOT NULL DEFAULT '72vh',
   enabled INTEGER NOT NULL DEFAULT 1,
   created_at TEXT NOT NULL,
@@ -64,11 +64,11 @@ INSERT INTO ad_slots (
   suggested_ratio, suggested_size, default_fit, default_width, default_max_height,
   enabled, created_at, updated_at
 ) VALUES
-  ('codex-session-patcher:enhance:left', 'codex-session-patcher', 'enhance', '增强', 'left', '左侧', '3:4', '1080 × 1440', 'natural', 'clamp(190px, 17vw, 320px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
-  ('codex-session-patcher:enhance:right', 'codex-session-patcher', 'enhance', '增强', 'right', '右侧', '3:4', '1080 × 1440', 'natural', 'clamp(190px, 17vw, 320px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
-  ('codex-session-patcher:settings:left', 'codex-session-patcher', 'settings', '设置', 'left', '左侧', '3:4', '1080 × 1440', 'natural', 'clamp(190px, 17vw, 320px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
-  ('codex-session-patcher:settings:right', 'codex-session-patcher', 'settings', '设置', 'right', '右侧', '3:4', '1080 × 1440', 'natural', 'clamp(190px, 17vw, 320px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
-  ('codex-session-patcher:help:left', 'codex-session-patcher', 'help', '帮助', 'left', '左侧', '3:4', '1080 × 1440', 'natural', 'clamp(190px, 17vw, 320px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
-  ('codex-session-patcher:help:right', 'codex-session-patcher', 'help', '帮助', 'right', '右侧', '3:4', '1080 × 1440', 'natural', 'clamp(190px, 17vw, 320px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
-  ('codex-session-patcher:cooperation:left', 'codex-session-patcher', 'cooperation', '合作', 'left', '左侧', '3:4', '1080 × 1440', 'natural', 'clamp(190px, 17vw, 320px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
-  ('codex-session-patcher:cooperation:right', 'codex-session-patcher', 'cooperation', '合作', 'right', '右侧', '3:4', '1080 × 1440', 'natural', 'clamp(190px, 17vw, 320px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z');
+  ('codex-session-patcher:enhance:left', 'codex-session-patcher', 'enhance', '增强', 'left', '左侧', '9:16', '1080 × 1920', 'natural', 'clamp(240px, 22vw, 420px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
+  ('codex-session-patcher:enhance:right', 'codex-session-patcher', 'enhance', '增强', 'right', '右侧', '9:16', '1080 × 1920', 'natural', 'clamp(240px, 22vw, 420px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
+  ('codex-session-patcher:settings:left', 'codex-session-patcher', 'settings', '设置', 'left', '左侧', '9:16', '1080 × 1920', 'natural', 'clamp(240px, 22vw, 420px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
+  ('codex-session-patcher:settings:right', 'codex-session-patcher', 'settings', '设置', 'right', '右侧', '9:16', '1080 × 1920', 'natural', 'clamp(240px, 22vw, 420px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
+  ('codex-session-patcher:help:left', 'codex-session-patcher', 'help', '帮助', 'left', '左侧', '9:16', '1080 × 1920', 'natural', 'clamp(240px, 22vw, 420px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
+  ('codex-session-patcher:help:right', 'codex-session-patcher', 'help', '帮助', 'right', '右侧', '9:16', '1080 × 1920', 'natural', 'clamp(240px, 22vw, 420px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
+  ('codex-session-patcher:cooperation:left', 'codex-session-patcher', 'cooperation', '合作', 'left', '左侧', '9:16', '1080 × 1920', 'natural', 'clamp(240px, 22vw, 420px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z'),
+  ('codex-session-patcher:cooperation:right', 'codex-session-patcher', 'cooperation', '合作', 'right', '右侧', '9:16', '1080 × 1920', 'natural', 'clamp(240px, 22vw, 420px)', '72vh', 1, '2026-06-08T00:00:00.000Z', '2026-06-08T00:00:00.000Z');
